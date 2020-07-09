@@ -131,3 +131,15 @@ works if the events are independently from each other and the order doesn't
 matter. If the order is important it could also be possible a partitioning
 concept is used. A column specify a partition key and every partition key is
 limited to be handled by the same worker to ensure the right order.
+
+## Conclusion
+
+PostgreSQL fits in pretty well in the requirements. It can be extended easily
+with powerful features and especially if it's needed to join other data to the
+events, read, change or delete events after publishing before handling it's
+a unique solution to have the message queue together with the application data
+in the same database.
+
+But there are also downsides. There are benchmarks with says handling thousands
+of events per second. But it won't reach the performance a dedicated optimized
+message queue engine will have.
