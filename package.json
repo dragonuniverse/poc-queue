@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "start": "node -r dotenv/config index.js"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "pg": "^8.2.1"
+  }
+}
