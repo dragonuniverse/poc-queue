@@ -2,6 +2,12 @@ This PoC should ensure PostgreSQL is usable as our message queue system.
 
 ## Try it out
 
+### With SQLite3 (only single worker)
+
+* Run `npm start`
+
+### With PostgreSQL
+
 * Run `docker-compose up`
 * Run in another terminal `npm start`
 * See the output like:
